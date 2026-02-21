@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
           } catch (error) {
             messageDiv.textContent = "Failed to unregister participant. Please try again.";
             messageDiv.className = "error";
-            messageDiv.classList.remove("hidden");
+            messageDiv.c            pytest tests/ --maxfail=3 --disable-warnings -vassList.remove("hidden");
             console.error("Error unregistering participant:", error);
           }
         });
