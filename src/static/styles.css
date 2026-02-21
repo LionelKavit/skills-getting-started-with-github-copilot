@@ -32,9 +32,42 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+.participants-list {
+  margin-bottom: 10px;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
   justify-content: center;
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5fe;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-bottom: 0;
+}
+}
+.participant-email {
+  flex: 1;
+  color: #333;
+  font-size: 15px;
 }
 
+.delete-icon {
+  cursor: pointer;
+  color: #c62828;
+  font-size: 18px;
+  margin-left: 6px;
+  transition: color 0.2s, transform 0.2s;
+}
+.delete-icon:hover {
+  color: #b71c1c;
+  transform: scale(1.2);
+}
 @media (min-width: 768px) {
   main {
     grid-template-columns: 2fr 1fr;
